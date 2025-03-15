@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breezie : A Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+
+<body>
+    <header>
+        <div id="head">
+            <nav>
+                <div class="left">Breezie</div>
+                    
+                </div>
+        </div>
+        </nav>
+        </div>
+    </header>
+    <main>
+        <section class="firstSection">
+            <section class="leftSection">
+                <form class="d-flex" role="search">
+                    <input id="city" class="form-control me-2" type="search" placeholder="Location"
+                        aria-label="Location">
+                    <button class="btn btn-outline-success" type="submit" id="submit">Search</button>
+                </form>
+                <div class="temp"><span id="temp_c1"></span><span class="degree"><sup>o</sup></span><span>c</span> <span
+                        id="cityName1" class="cityname">city</span> <br>
+                    <section class="dateTimeDay">
+                        <div id="currentTime"></div>
+                        <div id="currentDay"></div>
+                        <div id="currentDate"></div>
+                    </section>
+                    <div class="wind_speed"><span>Wind :</span><span id="wind_kph1"></span><span>km/h</span></div>
+                    <div class="humidity"><span>Humidity :</span><span id="humidity1"></span><span>%</span></div>
+                </div>
+            </section>
+            <section class="rightSection">
+                <h1>Weather Of <span id="cityName" class="cityname">city</span></h1>
+                <section class="rightSection1">
+                    <h2>Temperatures</h2>
+                    <hr>
+                    <ul class="tempt">
+                        <!-- <li>Temperature is :<span id="temp"></span></li> -->
+                        <li>Temperature in Celsius is :<span id="temp_c"></span></li>
+                        <li>Temperature in Fahrenheit is :<span id="temp_f"></span></li>
+                    </ul>
+                </section>
+                <section class="rightSection2">
+                    <h2>Humidity Info</h2>
+                    <hr>
+                    <ul class="Humidity">
+                        <li>Cloud is :<span id="cloud"></span></li>
+                        <li>Feels like :<span id="feelslike_c"></span></li>
+                        <li>Humidity is :<span id="humidity"></span></li>
+                    </ul>
+                </section>
+                <section class="rightSection3">
+                    <h2>Wind Info</h2>
+                    <hr>
+                    <ul class="wind">
+                        <li>Wind Speed is :<span id="wind_kph"></span></li>
+                        <li>Wind Degree is :<span id="wind_degree"></span></li>
+                        <li>UV is :<span id="uv"></span></li>
+                        <!-- <li>Sunset time is :<span id="sunset"></span></li> -->
+                    </ul>
+                </section>
+                </div>
+
+            </section>
+        </section>
+    </main>
+    <footer>
+        <div class="footer"></div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+    <Script>
+
+        let day = document.getElementById("currentDay")
+        setInterval(() => {
+            let d = new Date();
+            day.innerHTML = d.toLocaleString();
+        })
+
+    </Script>
+
+    </script>
+</body>
+
+</html>

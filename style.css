@@ -1,0 +1,155 @@
+* {
+    padding: 0%;
+    margin: 0;
+    color: white;
+}
+
+body {
+    background-image: url(BG2.png);
+    background-color: rgb(107, 37, 142);
+    background-size: 100%;
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    width: 100%;
+    
+}
+
+nav {
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+}
+
+nav .left {
+    font-family: serif;
+    font-size: 3.5rem;
+}
+
+nav .right {
+    display: flex;
+    justify-content: center;
+}
+
+nav .right ul {
+    display: flex;
+    justify-content: center;
+}
+
+.right ul li {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0 23px;
+    margin-top: 10%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    
+}
+nav ul li a:hover{
+    font-size: 1.05rem;
+    color: rgb(207, 164, 83);
+}
+
+
+.leftSection form input {
+
+    padding: 10px;
+    background-color: rgb(41, 40, 40);
+    color: white;
+    border: 1px solid #f7f8f8;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-left: 15%;
+    margin-top: 8%;
+    width: 65%;
+}
+
+.leftSection form button {
+    padding: 10px;
+    background-color: rgb(41, 40, 40);
+    color: white;
+    border: 1px solid #f7f8f8;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-left: 1%;
+    margin-top: 8%;
+}
+h1{
+    font-size: 3rem;
+    font-weight: lighter;
+    margin-left: 1%;
+    margin-top: 5%;
+}
+
+.firstSection{
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 0;
+    background-size: 1350px;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+.firstSection>div{
+    width: 100%;
+}
+.leftSection{
+    /* background-image: url(bg.pnb.png); */
+    background-size: 100px;
+    width: 65%;
+}
+.cityname{
+    font-weight: lighter;
+    font-size: 3rem;
+}
+.leftSection .temp{
+    margin-top: 10%;
+    margin-left: 15%;
+    font-size: 6rem;
+    font-weight: bolder;
+    color: rgb(237, 243, 241);
+}
+.dateTimeDay{
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+.wind_speed{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.humidity{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.rightSection{
+    width: 35%;
+    background-image: url(BG4.png);
+    opacity: 0.5;
+    color: white;
+    margin-top: 1%;
+}
+h2{
+    margin-top: 2%;
+    font-size: 2rem;
+    margin-left: 1%;
+}
+.tempt{
+    margin: 4%;
+    list-style: none;
+}
+.Humidity{
+    margin: 4%;
+    list-style: none;
+}
+.wind{
+    margin: 4%;
+    list-style: none;
+}
+
